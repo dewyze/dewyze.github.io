@@ -37,7 +37,7 @@ nav {
 
 .nav__menu_link {
   position: relative;
-  display: block;
+  display: inline-block;
   text-decoration: none;
   color: $blue;
   h3 {
@@ -46,5 +46,5 @@ nav {
 }
 
 .nav__menu_item--contact-method {
-  width: 6rem;
+  width: 4rem;
 }

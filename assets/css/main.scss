@@ -6,6 +6,18 @@
 @import "nav";
 @import "page";
 
+html {
+  text-rendering: optimizelegibility;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
 ul {
   padding: 0;
 }

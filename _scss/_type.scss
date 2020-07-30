@@ -12,6 +12,10 @@ h6 {
   text-align: center;
 }
 
+.text--blue {
+  color: $blue;
+}
+
 .text__blue_underline {
   position: relative;
 
@@ -20,8 +24,14 @@ h6 {
     position: absolute;
     height: 4px;
     left: 0;
-    top: 120%;
+    top: 110%;
     background-color: $blue;
+  }
+}
+
+.text__blue_underline--small {
+  &::before {
+    height: 3px;
   }
 }
 
@@ -53,15 +63,9 @@ h6 {
   }
 }
 
-.text__blue_underline--full {
+.text__blue_underline {
   &::before {
     width: 100%;
-  }
-}
-
-.text__blue_underline--partial {
-  &::before {
-    width: 75%;
   }
 }
 
