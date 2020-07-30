@@ -1,0 +1,50 @@
+nav {
+  grid-area: nav;
+  height: 100%;
+  color: $blue;
+  padding: 8px;
+}
+
+.nav__logo {
+  width: 150px;
+  margin: 0 auto;
+  fill: $blue;
+  display: block;
+}
+
+.nav__menu {
+  list-style-type: none;
+  display: flex;
+  margin: 30px 0;
+}
+
+.nav__menu--justify-center {
+  justify-content: center;
+}
+
+.nav__menu--vertical {
+  flex-direction: column;
+}
+
+.nav__menu_item {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav__menu_item--vertical {
+  padding: 0.75rem;
+}
+
+.nav__menu_link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: $blue;
+  h3 {
+    margin: 0;
+  }
+}
+
+.nav__menu_item--contact-method {
+  width: 6rem;
+}

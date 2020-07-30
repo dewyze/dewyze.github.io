@@ -26,9 +26,19 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dewyze.dev" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  dewyze
 
+defauts:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
 # Build settings
 plugins:
   - jekyll-feed
+
+sass:
+  load_paths:
+    - _scss
 
 # Exclude from processing.
 # The following items will not be processed, by default.
