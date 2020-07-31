@@ -16,6 +16,12 @@ h6 {
   color: #bbbbbb;
 }
 
+.text--header {
+  font-family: $type-header-family;
+  font-weight: bold;
+  color: $blue;
+}
+
 .text--italic {
   font-style: italic;
 }
@@ -32,7 +38,7 @@ h6 {
   font-size: 1rem;
 }
 
-.text__blue_underline {
+.blue_underline {
   position: relative;
 
   &::before {
@@ -43,25 +49,18 @@ h6 {
     left: 0;
     top: 110%;
     background-color: $blue;
+    visibility: visible;
   }
 }
 
-.text__blue_underline--small {
+.blue_underline--small {
   &::before {
     height: 3px;
   }
 }
 
-.text__blue_underline--active {
-  @extend .text__blue_underline;
-
-  &::before {
-    visibility: visible;
-  }
-}
-
-.text__blue_sideline {
-  @extend .text__blue_underline;
+.blue_sideline {
+  @extend .blue_underline;
 
   &::before {
     width: 4px;
@@ -84,8 +83,8 @@ h6 {
   }
 }
 
-.text__blue_underline--animate {
-  @extend .text__blue_underline;
+.blue_underline--hover {
+  @extend .blue_underline;
 
   &::before {
     visibility: hidden;

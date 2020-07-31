@@ -32,6 +32,11 @@ ul {
   margin: 40px auto 20px;
 }
 
+.wrapper--post {
+  max-width: 960px;
+  margin: 0 auto 20px;
+}
+
 @media (max-width: 767px) {
   .wrapper {
     grid-template-columns: 1fr;

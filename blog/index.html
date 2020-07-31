@@ -4,7 +4,7 @@ layout: default
 
 <div class="page__blog">
   {% for post in site.posts %}
-  <article class="page__blog_listing">
+  <article class="page__listing">
     <div class="listing__meta">
       <div class="listing__meta_date">
         {{ post.date | date: "%Y-%m-%d" }}
@@ -18,11 +18,11 @@ layout: default
       {% endif %}
     </div>
     <a href="{{ post.url }}"
-      ><h3 class="text--blue text__blue_sideline">
+      ><h3 class="text--blue blue_sideline">
         {{ post.title }}
       </h3></a
     >
-    <div class="page__blog_excerpt">
+    <div>
       {{ post.excerpt }}
     </div>
   </article>

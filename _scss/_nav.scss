@@ -12,6 +12,17 @@ nav {
   display: block;
 }
 
+.nav--top {
+  height: 30px;
+  width: 100%;
+  display: flex;
+
+  .nav__logo {
+    fill: $blue;
+    height: 30px;
+  }
+}
+
 .nav__menu {
   list-style-type: none;
   display: flex;
@@ -27,16 +38,24 @@ nav {
   flex-direction: column;
 }
 
-.nav__menu_item {
+.nav__menu--horizontal {
+  align-items: center;
+}
+
+.nav__item {
   width: 100%;
   box-sizing: border-box;
 }
 
-.nav__menu_item--vertical {
+.nav__item-top {
+  display: inline-block;
+}
+
+.nav__item--vertical {
   padding: 0.75rem;
 }
 
-.nav__menu_link {
+.nav__link {
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -46,6 +65,6 @@ nav {
   }
 }
 
-.nav__menu_item--contact-method {
+.nav__item--contact-method {
   width: 4rem;
 }

@@ -16,7 +16,7 @@
   font-weight: 400;
 }
 
-.page__home_section:not(:last-child) {
+.page__section:not(:last-child) {
   margin-bottom: 4rem;
 }
 
@@ -36,6 +36,6 @@
   line-height: 1.5;
 }
 
-.page__home_section p:first-child {
+.page__section p:first-child {
   margin-top: 0;
 }

@@ -61,8 +61,9 @@ As teammates' skills progress, consider offering opportunities for anchoring/lea
 Though taken together these tips may seem like extra work, think of this instead as a tech leadership mindset. Being a technical leader means being aware of the technical needs and aspirations of your teammates, creating a space where a team can learn and grow, and giving credit where credit is due.
 
 <div class="text--centered text--small">
-<a rel="noopener noreferr" target="__blank" class="text--blue text__blue_underline--hover
-text__blue_underline--full text__blue_underline--small"
+<a rel="noopener noreferr" target="__blank" class="text--blue
+blue_underline--hover
+blue_underline--small"
 href="{{ page.external_link }}"><i>Originally published
 on medium.</i></a>
 </div>

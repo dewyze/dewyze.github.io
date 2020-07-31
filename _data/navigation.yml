@@ -5,3 +5,8 @@ links:
     url: blog
   - title: Passions
     url: passions
+contact_methods:
+  - icons: fas fa-envelope
+    url: mailto:john@dewyze.dev
+  - icons: fab fa-github
+    url: https://github.com/dewyze

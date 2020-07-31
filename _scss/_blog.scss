@@ -1,5 +1,5 @@
 .page__blog {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-family: $type-serif-family;
   line-height: 1.65;
   text-align: justify;
@@ -51,10 +51,9 @@
   border-radius: 25px;
 }
 
-.page__blog_listing:not(:first-child) {
+.page__listing:not(:first-child) {
   &::before {
     display: block;
-    // width: 100%;
     content: "";
     background-color: $blue;
     opacity: 0.3;

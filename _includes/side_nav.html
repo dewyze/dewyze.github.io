@@ -1,0 +1,26 @@
+<nav class="nav">
+  <a href="/">{% include logo.html %}</a>
+  <h2 class="text--centered">John DeWyze</h2>
+  <div class="nav__menu nav__menu--justify-center">
+    {% for method in site.data.navigation.contact_methods %}
+    <a
+      class="nav__item nav__link blue_underline--hover nav__item--contact-method text--centered"
+      rel="noopener noreferr"
+      target="__blank"
+      href="{{ method.url }}"
+      ><i class="{{ method.icons }} fa-2x"></i>
+    </a>
+    {% endfor %}
+  </div>
+  <div class="nav__menu nav__menu--vertical">
+    {% for link in site.data.navigation.links %}
+      {% assign current = page.url | split: "/" [1] %}
+    <div class="nav__item nav__item--vertical">
+      <a
+        class="nav__link {% if current contains link.url %}blue_underline{% else %}blue_underline--hover{% endif %}"
+        href="/{{ link.url }}"
+        ><h3>{{ link.title }}</h3>
+      </a>
+    </div>
+    {% endfor %}
+</nav>
