@@ -4,6 +4,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: $blue;
   font-family: Raleway, Helvetica Neue, sans-serif;
   margin: 16px 0;
 }
@@ -14,12 +15,6 @@ h6 {
 
 .text--gray {
   color: #bbbbbb;
-}
-
-.text--header {
-  font-family: $type-header-family;
-  font-weight: bold;
-  color: $blue;
 }
 
 .text--italic {

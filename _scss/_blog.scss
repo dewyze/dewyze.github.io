@@ -21,6 +21,12 @@
     @extend .text--blue;
     line-height: 1.1;
   }
+
+  a {
+    font-weight: bold;
+    @extend .blue_underline--hover;
+    @extend .blue_underline--small;
+  }
 }
 
 .blog--post {

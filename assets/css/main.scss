@@ -6,6 +6,7 @@
 @import "nav";
 @import "page";
 @import "blog";
+@import "portfolio";
 
 html {
   text-rendering: optimizelegibility;
@@ -17,7 +18,7 @@ html {
 
 a {
   text-decoration: none;
-  color: unset;
+  color: $blue;
 }
 
 ul {
