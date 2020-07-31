@@ -35,6 +35,7 @@ defauts:
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 sass:
   load_paths:

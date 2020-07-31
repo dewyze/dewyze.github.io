@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="page__blog">
+  {% for post in site.posts %}
+  <article class="page__blog_listing">
+    <h4 style="color: #bbbbbb;" class="text--italic">
+      {{ post.date | date: "%Y-%m-%d" }}
+    </h4>
+    <a class="text--blue" href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+    <div class="page__blog_excerpt">
+      {{ post.excerpt }}
+    </div>
+  </article>
+  <hr class="page__blog_divider" />
+  {% endfor %}
+</div>

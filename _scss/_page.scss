@@ -6,16 +6,17 @@
 
 .page__home {
   font-family: $type-serif-family;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .page__home_section:not(:last-child) {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .page__home--title {
   font-size: 2.5rem;
   line-height: 1.35;
+  font-weight: 600;
 }
 
 .page__home--actions {
@@ -26,4 +27,8 @@
 .page__home--message {
   font-size: 1.25rem;
   line-height: 1.5;
+}
+
+.page__home_section p:first-child {
+  margin-top: 0;
 }
