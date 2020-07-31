@@ -1,4 +1,5 @@
-.page__blog {
+.blog {
+  margin: 3rem auto;
   font-size: 1rem;
   font-family: $type-serif-family;
   line-height: 1.65;
@@ -22,12 +23,16 @@
   }
 }
 
+.blog--post {
+  margin-bottom: 6rem;
+}
+
 .listing__meta {
   display: flex;
   align-items: center;
 }
 
-.listing__meta_date {
+.listing__date {
   color: $gray;
   text-align: left;
   font-family: $type-header-family;
@@ -35,7 +40,7 @@
   font-weight: 600;
 }
 
-.listing__meta_tags {
+.listing__tags {
   margin-left: auto;
 }
 
@@ -51,13 +56,21 @@
   border-radius: 25px;
 }
 
-.page__listing:not(:first-child) {
-  &::before {
+._light_blue_underline {
+  &::after {
     display: block;
     content: "";
     background-color: $blue;
     opacity: 0.3;
-    margin: 3rem;
+    margin: 2rem;
     height: 3px;
   }
+}
+
+.blog__title {
+  @extend ._light_blue_underline;
+}
+
+.blog__listing:not(:last-child) {
+  @extend ._light_blue_underline;
 }

@@ -1,16 +1,16 @@
 ---
-layout: default
+layout: blog
 ---
 
-<div class="page__blog">
+<div class="blog listings">
   {% for post in site.posts %}
-  <article class="page__listing">
+  <article class="blog__listing">
     <div class="listing__meta">
-      <div class="listing__meta_date">
+      <div class="listing__date">
         {{ post.date | date: "%Y-%m-%d" }}
       </div>
       {% if post.tags %}
-      <div class="listing__meta_tags">
+      <div class="listing__tags">
         {% for tag in post.tags %}
         <span class="listing__tag">{{ tag }}</span>
         {% endfor %}

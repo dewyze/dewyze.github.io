@@ -1,11 +1,13 @@
 ---
-layout: default
+layout: blog
 ---
 
-<article class="page__blog">
-  <h2 class="text--centered">{{ page.title }}</h2>
-  <h4 style="color: #bbbbbb;" class="text--italic text--centered">
-    {{ page.date | date: "%Y-%m-%d" }}
-  </h4>
+<article class="blog blog--post">
+  <div class="blog__title">
+    <h2 class="text--centered">{{ page.title }}</h2>
+    <h4 style="color: #bbbbbb;" class="text--italic text--centered">
+      {{ page.date | date: "%Y-%m-%d" }}
+    </h4>
+  </div>
   {{ content }}
 </article>

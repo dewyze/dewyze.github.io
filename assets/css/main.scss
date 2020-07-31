@@ -32,9 +32,10 @@ ul {
   margin: 40px auto 20px;
 }
 
-.wrapper--post {
-  max-width: 960px;
+.wrapper--blog {
+  max-width: 720px;
   margin: 0 auto 20px;
+  padding: 0.5rem 1.5rem;
 }
 
 @media (max-width: 767px) {
