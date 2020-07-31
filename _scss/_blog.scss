@@ -21,8 +21,14 @@
   }
 }
 
-.page__blog_divider {
-  color: $blue;
-  opacity: 0.3;
-  margin: 2rem 3rem;
+.page__blog_listing:not(:first-child) {
+  &::before {
+    display: block;
+    // width: 100%;
+    content: "";
+    background-color: $blue;
+    opacity: 0.3;
+    margin: 3rem;
+    height: 3px;
+  }
 }
