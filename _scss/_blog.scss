@@ -1,7 +1,8 @@
 .page__blog {
-  font-size: 1.25rem;
-  font-family: $type-sans-family;
-  line-height: 1.5;
+  font-size: 1.15rem;
+  font-family: $type-serif-family;
+  line-height: 1.65;
+  text-align: justify;
   ul {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -19,6 +20,35 @@
     @extend .text--blue;
     line-height: 1.1;
   }
+}
+
+.listing__meta {
+  display: flex;
+  align-items: center;
+}
+
+.listing__meta_date {
+  color: $gray;
+  text-align: left;
+  font-family: $type-header-family;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.listing__meta_tags {
+  margin-left: auto;
+}
+
+.listing__tag {
+  font-family: $type-header-family;
+  font-weight: bold;
+  color: $blue;
+  letter-spacing: 1;
+  box-sizing: border-box;
+  background-color: $light-gray;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  border-radius: 25px;
 }
 
 .page__blog_listing:not(:first-child) {

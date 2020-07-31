@@ -12,6 +12,7 @@ html {
   font-optical-sizing: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
 }
 
 a {
@@ -27,7 +28,7 @@ ul {
   display: grid;
   grid-template-areas: "nav page";
   grid-template-columns: 270px 1fr;
-  max-width: 960px;
+  max-width: 1024px;
   margin: 40px auto 20px;
 }
 

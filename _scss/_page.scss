@@ -2,6 +2,13 @@
   grid-area: page;
   margin: 1.25rem auto;
   color: #363636;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  .page {
+    padding: 0 1.5rem;
+  }
 }
 
 .page__home {
