@@ -80,3 +80,8 @@
 .blog__listing:not(:last-child) {
   @extend ._light_blue_underline;
 }
+
+.blog__scroll_to_top {
+  margin: 3rem auto;
+  text-align: center;
+}
