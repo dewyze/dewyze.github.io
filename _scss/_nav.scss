@@ -11,20 +11,13 @@ nav {
   display: block;
 }
 
-.nav--top {
-  padding: 0px;
-  margin-top: 1rem;
-  height: 30px;
-  width: 100%;
-  display: flex;
+.nav--side {
+  padding-top: 2.5rem;
   box-sizing: border-box;
-
-  .nav__logo {
-    fill: $blue;
-    height: 1.875rem;
-    width: unset;
-    margin-right: 1rem;
-  }
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .nav__menu {
@@ -49,10 +42,6 @@ nav {
 .nav__item {
   width: 100%;
   box-sizing: border-box;
-}
-
-.nav__item-top {
-  display: inline-block;
 }
 
 .nav__item--vertical {
