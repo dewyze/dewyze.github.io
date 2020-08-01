@@ -1,3 +1,15 @@
 ---
 layout: default
 ---
+
+<div class="blog listings">
+  {% for passion in site.passions %}
+  <article class="blog__listing">
+    <a href="{{ passion.url }}"
+      ><h2 class="blue_sideline">
+        {{ passion.title }}
+      </h2></a
+    >
+  </article>
+  {% endfor %}
+</div>

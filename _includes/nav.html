@@ -1,6 +1,6 @@
 <nav class="nav nav--side">
   <a href="/">{% include logo.html %}</a>
-  <h2 class="text--centered">John DeWyze</h2>
+  <h1 class="text--centered">John DeWyze</h1>
   <div class="nav__menu nav__menu--justify-center">
     {% for method in site.data.navigation.contact_methods %}
     <a
@@ -19,7 +19,7 @@
       <a
         class="nav__link {% if current contains link.url %}blue_underline{% else %}blue_underline--hover{% endif %}"
         href="/{{ link.url }}"
-        ><h3>{{ link.title }}</h3>
+        ><h2>{{ link.title }}</h2>
       </a>
     </div>
     {% endfor %}

@@ -25,7 +25,7 @@ It is therefore vital to be a voice for members of your team. Tech leads are in 
 
 So what can tech leads do to help their teammates be recognized for their accomplishments and progress in their careers?
 
-### Give lots of credit.
+## Give lots of credit.
 
 Make a conscious effort to give credit for ideas, solutions, discoveries, or any other good thing that happens on a team. Do it both publicly (a line in Slack, shoutout in a retro) and make sure to call it out to a manager in private.
 Create a culture of asking questions.
@@ -35,14 +35,15 @@ Foster psychological safety, particularly around failure.
 
 Engineers that are afraid of failure are less likely to search for creative solutions to problems. Let it be known that failures occur as a team, not as an individual. Consider the door/window philosophy of leadership. When ideas and comments come from outside the team, be a door to negativity and a window to positivity. NOTE: This is not a dismissal of constructive feedback which is equally important, it just ensures it happens in the right setting.
 
-### Use one-on-ones.
+## Use one-on-ones.
 
 Schedule occasional one-on-ones with teammates to get a sense of the things they are hoping to learn, the things they think they are doing well, and the things they are struggling with. As opposed to a manager, your role here is to assign work, pair, offer learning resources, and review code with these things in mind. This also creates a known place for feedback to occur both ways.
-### Implement a healthy feedback cycle.
+
+## Implement a healthy feedback cycle.
 
 Learning how to give and receive feedback well is a skill that can be learned and practiced. There are many resources you can find if you want more information. When someone is excelling, let them know. Receiving affirmation can validate conscious efforts or encourage natural skill sets. When someone is struggling, provide feedback, opportunities, and resources in a way that is supportive while still constructive. And finally, feedback needs to go both ways. Be sure to ask for feedback in every one-on-one, making it clear that it's a normal thing. This "giving permission" to provide feedback creates trust and increases the regularity of good feedback.
 
-### Provide concrete and actionable feedback.
+## Provide concrete and actionable feedback.
 
 Some examples:
 
@@ -50,11 +51,11 @@ Some examples:
 - Someone may prefer not to speak up at meetings, but in one-on-one situations, they are insightful and collaborative and good communicators. Instead of saying something like, "You should talk more in meetings," (which is just an empty cliche) express that being able to communicate complex technical ideas to varying groups of people is an important skill that contributes to collaborative and productive teams. You can help them ensure they are able to communicate to wider groups of people, via email or technical design docs.
 - Be sure to provide technical feedback in addition to soft skills feedback. E.g. "I notice you lean heavily toward metaprogramming and inheritance, but that can sometimes make code difficult to read and maintain. Let's focus on maturing your skills to produce easier to read code."
 
-### Partner with the manager
+## Partner with the manager
 
 Ensure that in your own meetings with your manager you take time to share the successes and areas for improvement for your teammates. If this needs to be an alternating meeting with your manager so you can also have opportunities to talk about your own career progression, so be it.
 
-### Offer leadership opportunities
+## Offer leadership opportunities
 
 As teammates' skills progress, consider offering opportunities for anchoring/leadership on a team. Not all teammates may openly say they want to take on a project, but that does not signal their capability to do so. This also has the benefit of increasing your teammates' sense of ownership of projects and signifies the importance of their role on the team. These also do not need to be full blown month long work streams, but can be as small as taking complete ownership on design for a card.
 

@@ -13,6 +13,10 @@ defauts:
     values:
       image: true
 
+collections:
+  passions:
+    output: true
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
