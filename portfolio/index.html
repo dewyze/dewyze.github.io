@@ -2,6 +2,42 @@
 layout: default
 ---
 
-<div class="page page--portfolio">
-  <h2>Portfolio</h2>
+<div class="page--portfolio">
+  {% for category in site.data.portfolio.categories %}
+  <h2 class="text--centered">{{ category.title }}</h2>
+  <div class="portfolio__repos">
+    {% for repo in category.repos %}
+    <!-- prettier-ignore -->
+    {% assign url = "https://github.com/dewyze/" | append: repo.name %}
+    <div class="portfolio__repo">
+      <div class="portfolio__title--repo">
+        <a
+          rel="noopener noreferrer"
+          target="__blank"
+          class="blue_underline--hover blue_underline--small"
+          href="{{ url }}"
+          ><h4>{{ repo.name }}</h4></a
+        >
+      </div>
+
+      <a
+        rel="noopener noreferrer"
+        target="__blank"
+        class="portfolio__snippet--link"
+        href="{{ url }}"
+      >
+        <div class="portfolio__snippet--container">
+          <div class="portfolio__snippet--code">
+            {{ repo.code | markdownify }}
+          </div>
+          <div class="portfolio__snippet--description">
+            <p>{{ repo.description }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    {% endfor %}
+  </div>
+  {% endfor %}
 </div>
