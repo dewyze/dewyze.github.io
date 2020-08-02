@@ -14,10 +14,12 @@ nav {
 .nav--side {
   padding-top: 2.5rem;
   box-sizing: border-box;
-  height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  @media (min-width: 768px) {
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
 }
 
 .nav__menu {
