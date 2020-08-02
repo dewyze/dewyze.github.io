@@ -3,7 +3,9 @@ layout: default
 ---
 
 <div class="blog listings">
-  {% for passion in site.passions %}
+  {% for category in site.data.passions %}
+  <h1 class="text--centered">{{ category.title }}</h1>
+  {% for passion in category.passions %}
   <article class="listing">
     <a href="{{ passion.url }}"
       ><h2 class="blue_sideline--hover">
@@ -11,5 +13,5 @@ layout: default
       </h2></a
     >
   </article>
-  {% endfor %}
+  {% endfor %} {% endfor %}
 </div>
