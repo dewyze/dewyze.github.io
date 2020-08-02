@@ -1,130 +1,129 @@
-categories:
-  - title: Open Source
-    repos:
-      - name: vim-ruby-block-helpers
-        description: Vim plugin for more easily maneuvering between ruby blocks as well as displaying current spot nested blocks in rspec files.
-        code: |
-          ```vimscript
-          function s:RubyBlockNext(...)
-            norm! m'
-            let flags = "W"
-            call s:CheckVisualMode(a:000)
-            if match(getline('.'), s:end_pattern, flags) == -1
-              call s:RubyBlockEnd()
-            endif
-          ```
-      - name: putter
-        description: Ruby gem for puts debugging. Follow instances or watch classes to see where in the code what methods get called and when.
-        code: |
-          ```ruby
-          def self.watch(obj, options={})
-            data = WatcherData.new(options, obj)
-            @registry[obj.singleton_class] = data
-            class << obj
-              prepend InstanceFollower
-              prepend Putter::Watcher.class_proxy(self)
-            end
-          ```
-      - name: master_to_main
-        description: Ruby gem for changing github default branch from master to main, including updating PRs and branch protections.
-        code: |
-          ```ruby
-          def clone_branch_protections
-            begin
-              repo = @client.repo(@repo.name)
-              options = @client.branch_protection(@repo.name, @repo.old_branch)
-            rescue Octokit::Forbidden
-              return
-            end
-          ```
-      - name: trello-card-numbers
-        description: |
-          Chrome extension for displaying numbers on trello cards.<br/><br/><sub style="text-align: center">*NO LONGER MAINTAINED*</sub>
-        code: |
-          ```javascript
-          function lightboxReady() {
-            var promise = new Promise(function(resolve,reject) {
-              var inc = 40;
-              var lightboxListener = function(interval) {
-                var lightbox = document.getElementsByClassName(LIGHTBOX_SELECTOR);
-                if (lightbox.length != 0) {
-                  resolve('true');
-          ```
-  - title: For Fun
-    repos:
-      - name: kibitzing_engine
-        description: Elixir app for analyzing bridge hands based on a bidding sequence.
-        code: |
-          ```elixir
-          defp process_nodes([node | []], table), do: process_node(node, table)
-          defp process_nodes([node | nodes], orig_table) do
-            with {:ok, table} <- process_node(node, orig_table) do
-              process_nodes(nodes, table)
-            else
-              _ ->
-                {:fail}
-          ```
-      - name: scoringgames
-        description: Elm app for keeping score in the darts game, Cricket.
-        code: |
-          ```elm
-          scoreForPlayer : Player -> Int
-          scoreForPlayer player =
-            let
-              states =
-                List.map (\\num -> Maybe.withDefault (Points 0) (Dict.get num player.targets)) targets
-            in
-            List.foldl (+) 0 (List.map pointsForState states)
-          ```
-  - title: Personal
-    repos:
-      - name: dotfiles
-        description: My personal vim dotfiles.
-        code: |
-          ```ruby
-          desc "symlink files into home directory"
-          task :install do
-            working_dir = File.dirname(__FILE__)
-            for_each_dotfile(working_dir) do |file, dotfile_path|
-              convert_to_backup(dotfile_path)
-              FileUtils.ln_s(file, dotfile_path)
-            end
-          ```
-      - name: dewyze.dev
-        description: My personal website. This one.
-        code: |
-          ```liquid
-          <div class="portfolio__snippet--container">
-            <div class="portfolio__snippet--code">
-              {{ repo.code | markdownify }}
-            </div>
-            <div class="portfolio__snippet--description">
-              <p>{{ repo.description }}</p>
-            </div>
-          ```
-  - title: Tinkering
-    repos:
-      - name: vim-ignore
-        description: Attempt at a vim plugin for converting a .gitignore file into universal ignores for fzf and NerdTREE
-        code: |
-          ```vim
-          function! g:VimIgnoreNERDTreeFilter(params)
-          let pwd=expand('%:p:h')
-          let fullPath=join([''] + a:params['path']['pathSegments'], '/')
-          let ignore_path = ignore#converters#nerdtree#ignore_array(g:vimignore_ignore_map)
-          let relativePath=substitute(fullPath, pwd . "/", '', '')
-          if relativePath =~ ignore_path
-            return 1
-          ```
-      - name: sartorial
-        description: Attempt at a Sass framework. Mostly an opportunity to gain a better understanding of Sass. Also a Jekyll site with custom elements.
-        code: |
-          ```scss
-          .navbar {
-            position: relative;
-            &:not(.full-width) {
-              max-width: $container-width;
-              @include margin(null auto);
-            }
-            flex-wrap: wrap;
-          ```
+- title: Open Source
+  repos:
+    - name: vim-ruby-block-helpers
+      description: Vim plugin for more easily maneuvering between ruby blocks as well as displaying current spot nested blocks in rspec files.
+      code: |
+        ```vimscript
+        function s:RubyBlockNext(...)
+          norm! m'
+          let flags = "W"
+          call s:CheckVisualMode(a:000)
+          if match(getline('.'), s:end_pattern, flags) == -1
+            call s:RubyBlockEnd()
+          endif
+        ```
+    - name: putter
+      description: Ruby gem for puts debugging. Follow instances or watch classes to see where in the code what methods get called and when.
+      code: |
+        ```ruby
+        def self.watch(obj, options={})
+          data = WatcherData.new(options, obj)
+          @registry[obj.singleton_class] = data
+          class << obj
+            prepend InstanceFollower
+            prepend Putter::Watcher.class_proxy(self)
+          end
+        ```
+    - name: master_to_main
+      description: Ruby gem for changing github default branch from master to main, including updating PRs and branch protections.
+      code: |
+        ```ruby
+        def clone_branch_protections
+          begin
+            repo = @client.repo(@repo.name)
+            options = @client.branch_protection(@repo.name, @repo.old_branch)
+          rescue Octokit::Forbidden
+            return
+          end
+        ```
+    - name: trello-card-numbers
+      description: |
+        Chrome extension for displaying numbers on trello cards.<br/><br/><sub style="text-align: center">*NO LONGER MAINTAINED*</sub>
+      code: |
+        ```javascript
+        function lightboxReady() {
+          var promise = new Promise(function(resolve,reject) {
+            var inc = 40;
+            var lightboxListener = function(interval) {
+              var lightbox = document.getElementsByClassName(LIGHTBOX_SELECTOR);
+              if (lightbox.length != 0) {
+                resolve('true');
+        ```
+- title: For Fun
+  repos:
+    - name: kibitzing_engine
+      description: Elixir app for analyzing bridge hands based on a bidding sequence.
+      code: |
+        ```elixir
+        defp process_nodes([node | []], table), do: process_node(node, table)
+        defp process_nodes([node | nodes], orig_table) do
+          with {:ok, table} <- process_node(node, orig_table) do
+            process_nodes(nodes, table)
+          else
+            _ ->
+              {:fail}
+        ```
+    - name: scoringgames
+      description: Elm app for keeping score in the darts game, Cricket.
+      code: |
+        ```elm
+        scoreForPlayer : Player -> Int
+        scoreForPlayer player =
+          let
+            states =
+              List.map (\\num -> Maybe.withDefault (Points 0) (Dict.get num player.targets)) targets
+          in
+          List.foldl (+) 0 (List.map pointsForState states)
+        ```
+- title: Personal
+  repos:
+    - name: dotfiles
+      description: My personal vim dotfiles.
+      code: |
+        ```ruby
+        desc "symlink files into home directory"
+        task :install do
+          working_dir = File.dirname(__FILE__)
+          for_each_dotfile(working_dir) do |file, dotfile_path|
+            convert_to_backup(dotfile_path)
+            FileUtils.ln_s(file, dotfile_path)
+          end
+        ```
+    - name: dewyze.dev
+      description: My personal website. This one.
+      code: |
+        ```liquid
+        <div class="portfolio__snippet--container">
+          <div class="portfolio__snippet--code">
+            {{ repo.code | markdownify }}
+          </div>
+          <div class="portfolio__snippet--description">
+            <p>{{ repo.description }}</p>
+          </div>
+        ```
+- title: Tinkering
+  repos:
+    - name: vim-ignore
+      description: Attempt at a vim plugin for converting a .gitignore file into universal ignores for fzf and NerdTREE
+      code: |
+        ```vim
+        function! g:VimIgnoreNERDTreeFilter(params)
+        let pwd=expand('%:p:h')
+        let fullPath=join([''] + a:params['path']['pathSegments'], '/')
+        let ignore_path = ignore#converters#nerdtree#ignore_array(g:vimignore_ignore_map)
+        let relativePath=substitute(fullPath, pwd . "/", '', '')
+        if relativePath =~ ignore_path
+          return 1
+        ```
+    - name: sartorial
+      description: Attempt at a Sass framework. Mostly an opportunity to gain a better understanding of Sass. Also a Jekyll site with custom elements.
+      code: |
+        ```scss
+        .navbar {
+          position: relative;
+          &:not(.full-width) {
+            max-width: $container-width;
+            @include margin(null auto);
+          }
+          flex-wrap: wrap;
+        ```

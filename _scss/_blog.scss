@@ -20,16 +20,46 @@
   h6 {
     @extend .text--blue;
     line-height: 1.1;
+    position: relative;
   }
 
   a {
     font-weight: bold;
     @extend .blue_underline--hover;
     @extend .blue_underline--small;
+
+    &.anchor--link {
+      font-size: 0.75rem;
+      position: absolute;
+      left: -1.5rem;
+      top: 35%;
+      cursor: pointer;
+    }
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+
+  blockquote {
+    border-left: 4px solid #ccc;
+
+    font-size: 1.5rem;
+    padding: 0.001rem 2rem;
+
+    .blockquote__author {
+      font-size: 1rem;
+      text-align: right;
+    }
+  }
+
+  pre.highlight {
+    line-height: 1.25;
   }
 }
 
-.blog--post {
+.blog--post,
+.blog-article {
   margin-bottom: 6rem;
 }
 
@@ -73,11 +103,11 @@
   }
 }
 
-.blog__title {
+.blog__title--underline {
   @extend ._light_blue_underline;
 }
 
-.blog__listing:not(:last-child) {
+.listing:not(:last-child) {
   @extend ._light_blue_underline;
 }
 

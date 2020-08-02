@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="page--portfolio">
-  {% for category in site.data.portfolio.categories %}
+  {% for category in site.data.portfolio %}
   <h1 class="text--centered">{{ category.title }}</h1>
   <div class="portfolio__repos">
     {% for repo in category.repos %}

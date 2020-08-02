@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="blog page--talks">
+  {% for talk in site.data.talks %}
+  <article class="listing">
+    <div class="listing__meta">
+      <div class="listing__date">
+        {{ talk.occasion }}
+      </div>
+      <div class="listing__tags">
+        {% assign tags = talk.tags | split: " " %} {% for tag in tags %}
+        <span class="listing__tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <h2>{{ talk.title }}</h2>
+    <div class="container--60w">
+      <div class="video">
+        {{ talk.embed }}
+      </div>
+    </div>
+    <div>
+      {{ talk.description }}
+    </div>
+  </article>
+  {% endfor %}
+</div>

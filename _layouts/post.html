@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="blog blog--post">
-  <div class="blog__title">
+  <div class="blog__title--underline">
     <h1 class="text--centered">{{ page.title }}</h1>
     <h3 style="color: #bbbbbb;" class="text--italic text--centered">
       {{ page.date | date: "%Y-%m-%d" }}
@@ -16,3 +16,17 @@ layout: default
     ></a>
   </div>
 </article>
+<script>
+  const children = document.querySelectorAll(".blog--post h2");
+
+  children.forEach((el) => {
+    const id = el.getAttribute("id");
+    if (id) {
+      let link = document.createElement("a");
+      link.classList.toggle("anchor--link");
+      link.innerHTML = '<i class="fas fa-link"></i>';
+      link.setAttribute("href", "#" + id);
+      el.prepend(link);
+    }
+  });
+</script>

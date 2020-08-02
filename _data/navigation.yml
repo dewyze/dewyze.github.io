@@ -3,6 +3,8 @@ links:
     url: portfolio
   - title: Blog
     url: blog
+  - title: Talks
+    url: talks
   - title: Passions
     url: passions
 contact_methods:

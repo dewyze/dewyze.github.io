@@ -38,13 +38,11 @@ a.portfolio__snippet--link {
   overflow: hidden;
 
   pre {
-    padding: 1rem;
     font-size: 14px;
     text-overflow: ellipsis;
     // white-space: pre-wrap;
     overflow: hidden;
     margin: 0;
-    background-color: $dark-white;
   }
 }
 

@@ -1,0 +1,9 @@
+- title: My Meta Moments
+  occasion: RubyConf 2016
+  embed: |
+    <iframe src="https://www.youtube-nocookie.com/embed/0OAgZBNIixU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  tags: ruby metaprogramming
+  description: |
+    Meta-programming is alluring. To write code that writes more code sounds like the peak of efficiency, but learning it is filled with infinite loops and confusing stack traces. It is a place with lots of hair pulling and endless puts debugging.
+
+    Meta-programming in ruby can be intimidating. Yet, even with all that, it is fun. It is learnable. It is quintessentially ruby. If you’re interested in getting your feet wet, come share my journey of learning things like method dispatch, BasicObject, class ancestry, and the joy of things you should think twice about before doing in production code.
