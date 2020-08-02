@@ -21,6 +21,12 @@
     @extend .text--blue;
     line-height: 1.1;
     position: relative;
+
+    &:hover {
+      .anchor--link {
+        display: block;
+      }
+    }
   }
 
   a {
@@ -30,10 +36,16 @@
 
     &.anchor--link {
       font-size: 0.75rem;
+      display: none;
       position: absolute;
-      left: -1.5rem;
-      top: 35%;
+      padding: 0.25rem;
+      right: 100%;
+      top: 25%;
       cursor: pointer;
+
+      &:hover {
+        display: block;
+      }
     }
   }
 
