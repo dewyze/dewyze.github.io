@@ -5,7 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: "https://dewyze.dev"
 github_username:  dewyze
-destination: /docs
+destination: docs/
 
 highlighter: rouge
 defauts:
