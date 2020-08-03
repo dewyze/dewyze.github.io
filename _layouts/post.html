@@ -21,7 +21,9 @@ layout: default
 
   children.forEach((el) => {
     const id = el.getAttribute("id");
+    console.log("here 1");
     if (id) {
+      console.log("here 2");
       let link = document.createElement("a");
       link.classList.toggle("anchor--link");
       link.innerHTML = '<i class="fas fa-link"></i>';
