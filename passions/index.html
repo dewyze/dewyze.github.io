@@ -4,14 +4,17 @@ layout: default
 
 <div class="blog listings">
   {% for category in site.data.passions %}
-  <h1 class="text--centered">{{ category.title }}</h1>
-  {% for passion in category.passions %}
-  <article class="listing">
-    <a href="{{ passion.url }}"
-      ><h2 class="blue_sideline--hover">
-        {{ passion.title }}
-      </h2></a
-    >
+  <article class="page__section">
+    <h1 class="">{{ category.title }}</h1>
+    {% for passion in category.passions %}
+    <div class="container--indent">
+      <a href="{{ passion.url }}"
+        ><h2 class="blue_sideline--hover">
+          {{ passion.title }}
+        </h2></a
+      >
+    </div>
+    {% endfor %}
   </article>
-  {% endfor %} {% endfor %}
+  {% endfor %}
 </div>

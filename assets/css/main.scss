@@ -42,7 +42,7 @@ ul {
 
 @media (max-width: 767px) {
   .wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
       "nav"
       "page";
@@ -82,5 +82,13 @@ pre {
 .container--60w {
   width: 60%;
   margin: 1.5rem auto;
-  // box-shadow: 0 0 30px #333;
+}
+
+.container--80w {
+  width: 80%;
+  margin: 1.5rem auto;
+}
+
+.container--indent {
+  margin-left: 2rem;
 }
