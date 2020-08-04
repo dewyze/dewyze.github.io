@@ -5,7 +5,7 @@ permalink: "/passions/pizza-and-bread"
 ---
 
 I don't know if it's a result of growing up near the home of Deep Dish Pizza,
-  using pizza as a way to survive being a picky eater, or just a simple human
+  using pizza as a way to survive being a picky eater as a child, or just a simple human
   taste for pizza, but I am a fan.
 
 Back in college, I watched an episode of _Throwdown with Bobby Flay_ where he challenged Mark Malnati (of [Lou
