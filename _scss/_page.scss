@@ -42,3 +42,10 @@
 .page__section p:first-child {
   margin-top: 0;
 }
+
+.page__home--about {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: $blue;
+}
