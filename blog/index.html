@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="blog listings">
-  {% for post in site.posts %}
+  {% for post in site.posts %} {% unless post.exclude_from_feed %}
   <article class="listing">
     <div class="listing__meta">
       <div class="listing__date">
@@ -26,5 +26,5 @@ layout: default
       {{ post.excerpt }}
     </div>
   </article>
-  {% endfor %}
+  {% endunless %} {% endfor %}
 </div>

@@ -56,7 +56,13 @@ h6 {
 
 .blue_underline--small {
   &::before {
-    height: 3px;
+    height: 2px;
+  }
+}
+
+.blue_underline--close {
+  &::before {
+    top: 100%;
   }
 }
 
@@ -96,6 +102,12 @@ h6 {
   }
 }
 
+.blue_underline--none {
+  &:hover::before {
+    display: none;
+  }
+}
+
 .blue_underline--hover {
   @extend .blue_underline;
 
@@ -130,5 +142,5 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }

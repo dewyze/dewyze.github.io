@@ -29,7 +29,7 @@ ul {
 .wrapper {
   display: grid;
   grid-template-areas: "nav page";
-  grid-template-columns: 270px 1fr;
+  grid-template-columns: 270px minmax(0, 1fr);
   max-width: 1024px;
   margin: 0 auto;
 }

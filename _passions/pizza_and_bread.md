@@ -19,7 +19,7 @@ Style_ pizzas. If you want to learn about the process, my attempts, and lessons
 learned, click the picture below!
 
 <div class="container--80w">
-<a class="link--image" href="https://www.notion.so/Dough-Journal-e5ab47920af74eb19b99f17e075308e0">
+<a target="__blank" class="link--image" href="https://www.notion.so/Dough-Journal-e5ab47920af74eb19b99f17e075308e0">
 <img src="/assets/img/pizza.jpg" alt="Pizza Napolitana" />
 </a>
 </div>
