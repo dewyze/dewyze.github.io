@@ -8,6 +8,10 @@ excerpt: Image you have a Store form, and you want to be able to add and delete 
 difficulty: medium
 ---
 
+1. [Rails Nested Attributes, Dynamic Forms, and StimulusJS Setup](/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-setup)
+1. Rails Nested Attributes, Dynamic Forms, and StimulusJS Part 1
+1. [Rails Nested Attributes, Dynamic Forms, and StimulusJS Part 2](/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-part-2)
+
 Have you ever wanted to add a form that had an "Add Another" button? Or that
 didn't make a server call every time you clicked delete? On top of that, have
 you dreaded the thought of needing to add React or a LOT of javascript in order
