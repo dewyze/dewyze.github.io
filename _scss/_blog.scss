@@ -86,6 +86,12 @@
       right: -5px;
       transform-origin: 50% 50%;
     }
+
+    img {
+      width: unset;
+      border: none;
+      max-width: 100%;
+    }
   }
 
   li:not(:last-child) {
@@ -113,14 +119,24 @@
   }
 
   img {
-    max-width: 100%;
+    border: 2px solid $blue;
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
     height: auto;
+  }
+
+  code.language-plaintext {
+    display: inline-block;
+    background: $dark-white;
+    font-weight: bold;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 }
 
 .blog--post,
 .blog-article {
-  margin-bottom: 6rem;
   p > a {
     display: inline-block;
   }
