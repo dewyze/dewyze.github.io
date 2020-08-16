@@ -6,7 +6,6 @@ permalink: "/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-part-2"
 tags: rails stimulus frontend
 excerpt: Image you have a Store form, and you want to be able to add and delete an unlimited number of books in one form submission. Using StimulusJS and Rails Nested Attributes, this is incredibly simple.
 difficulty: medium
-exclude_from_feed: true
 ---
 
 
