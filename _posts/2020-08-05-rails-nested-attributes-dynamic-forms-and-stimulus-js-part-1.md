@@ -293,7 +293,8 @@ Now, here is our changes
    class.
 1. Get the toggle class dynamically from the DOM, that way we aren't limited to
    a "hiding" controller.
-1. Update the name of our target to `containerTargets`.
+1. Update the name of our target to `containerTargets` and use the
+   `toggleClass`.
 
 Let's update our DOM:
 
@@ -305,7 +306,7 @@ Let's update our DOM:
 
 Above we change our controller to be the `toggle` controller (we'll add the
 update value one back in a moment). We also are adding
-`data-toggle-class="hidden"` which will allow us to set the correct toggle class
+`data-toggle-class="1"` which will allow us to set the correct toggle class
 dynamically each time we use the controller.
 
 
@@ -314,8 +315,7 @@ dynamically each time we use the controller.
 
 <div class="book-field" data-target="toggle.container"> <!-- 1 -->
   ...
-  <%= button_tag "Delete", data: { action: "toggle#toggle", "index":
-  book_form.index } %> <!-- 2 -->
+  <%= button_tag "Delete", data: { action: "toggle#toggle", "index": book_form.index } %> <!-- 2 -->
 ```
 
 1. And here, we set the `data-target` name to `toggle.container`.
