@@ -23,7 +23,7 @@ Our solution will look something like this:
 
 ![Add Books](/assets/img/add_books.gif)
 
-If we look at the source code of a rails nested attribute, we get something like
+If we look at the html produced by our rails nested attributes, we get something like
 this.
 
 ```html
@@ -69,7 +69,7 @@ component we can use, but we were trying to use just plain `erb` files.
 We could try and build it in javascript, but then if we change it on the server,
 we would need to change the client as well.
 
-There is another option! We can let the server do it! We can simply create an
+There is another option, we can let the server do it! We can simply create an
 endpoint which just returns some html and use stimulus to insert it into our
 DOM.
 
@@ -131,7 +131,8 @@ Let's walk through this:
    passed in.
 1. We need a `create` route because the form builder is dealing with a new
    store, it will not be used. We could pass the store ID and use an update, but
-   for now create will suffice.
+   for now create will suffice. (Normally this would be present in some way so
+   you could create the store anyway, but we are not focusing on that now.)
 1. And we add a route for our form fields controller.
 
 
@@ -255,4 +256,4 @@ And then:
 ![Add Books](/assets/img/add_books.gif)
 
 We didn't have to replicate our templating logic anywhere, and could just reuse
-some rails magic and our existing views.
+some rails magic and our existing views. Now go make something!
