@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Rails Nested Attributes, Dynamic Forms, and StimulusJS Setup"
+title:  "Rails Nested Attributes, Dynamic Forms, and StimulusJS Appendix"
 date:   2020-08-05
-permalink: "/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-setup"
+permalink: "/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-appendix"
 tags: rails stimulus frontend
 exclude_from_feed: true
 ---
 
-1. [Rails Nested Attributes, Dynamic Forms, and StimulusJS Setup](/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-setup)
 1. [Rails Nested Attributes, Dynamic Forms, and StimulusJS Part 1](/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-part-1)
 1. [Rails Nested Attributes, Dynamic Forms, and StimulusJS Part 2](/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-part-2)
+1. Rails Nested Attributes, Dynamic Forms, and StimulusJS Appendix
 
 If you want to follow along with the same controllers, models, views, and
 routes, you can use these snippets. It does assume you have a working rails app.

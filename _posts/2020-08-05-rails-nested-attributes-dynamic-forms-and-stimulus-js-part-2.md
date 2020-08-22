@@ -8,9 +8,9 @@ excerpt: Image you have a Store form, and you want to be able to add and delete 
 difficulty: medium
 ---
 
-1. [Rails Nested Attributes, Dynamic Forms, and StimulusJS Setup](/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-setup)
 1. [Rails Nested Attributes, Dynamic Forms, and StimulusJS Part 1](/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-part-1)
 1. Rails Nested Attributes, Dynamic Forms, and StimulusJS Part 2
+1. [Rails Nested Attributes, Dynamic Forms, and StimulusJS Appendix](/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-appendix)
 
 
 ## Adding a Row

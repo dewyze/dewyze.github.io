@@ -8,9 +8,9 @@ excerpt: Image you have a Store form, and you want to be able to add and delete 
 difficulty: medium
 ---
 
-1. [Rails Nested Attributes, Dynamic Forms, and StimulusJS Setup](/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-setup)
 1. Rails Nested Attributes, Dynamic Forms, and StimulusJS Part 1
 1. [Rails Nested Attributes, Dynamic Forms, and StimulusJS Part 2](/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-part-2)
+1. [Rails Nested Attributes, Dynamic Forms, and StimulusJS Appendix](/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-appendix)
 
 Have you ever wanted to add a form that had an "Add Another" button? Or that
 didn't make a server call every time you clicked delete? On top of that, have
@@ -28,8 +28,8 @@ It also assumes a small familiarity with [StimulusJS](https://stimulusjs.org/).
 If you are not familiar with Stimulus, going through the docs should be enough
 to follow along with this guide.
 
-If you want some help setting those up, check out [the setup
-article](/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-setup).
+If you want some help setting those up, check out [the appendix
+article](/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-appendix).
 
 ## Let's Build a Form!
 
@@ -38,8 +38,8 @@ Here is what we want to build:
 ![Book Store App](/assets/img/book_store.png)
 
 We will have a form on our edit page and extract the book fields into a partial.
-Some classes are included which match styles that can be found [in the setup
-page](http://localhost:4000/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-setup#views).
+Some classes are included which match styles that can be found [in the appendix
+page](http://localhost:4000/blog/rails-nested-attributes-dynamic-forms-and-stimulus-js-appendix#views).
 
 ```erb
 <%# app/views/stores/edit.html.erb %>
@@ -120,7 +120,10 @@ export default class extends Controller {
 ```
 
 Let's add our delete row logic. First, we will need to add our controller to our
-html. We can add this to `div#book-form`.
+html. We can add this to `div#book-form`. Per the [stimulus docs on
+controllers](https://stimulusjs.org/reference/controllers), by adding
+`data-controller="form"` to our div, that will connect it to our form
+controller.
 
 ```erb
 <%# app/views/stores/edit.html.erb %>
@@ -135,8 +138,7 @@ console.
 ```erb
 <%# app/views/stores/_book_fields.html.erb %>
 
-<%= button_tag "Delete", data: { action: "form#deleteRow", "index":
-book_form.index } %>
+<%= button_tag "Delete", data: { action: "form#deleteRow", "index": book_form.index } %>
 ```
 
 We add a `data-action` attribute that points to the `form` javascript
