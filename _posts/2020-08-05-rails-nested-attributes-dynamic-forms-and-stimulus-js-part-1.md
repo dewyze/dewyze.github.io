@@ -163,7 +163,7 @@ simple.
 ```erb
 <%# app/views/stores/_book_fields.html.erb %>
 
-<div class="book-field" data-target="form.bookRow">
+<div class="book-field" data-target="form.bookRow" data-index="<%= book_form.index %>">
 ```
 
 As long as we don't have a non-row with the same `data-target` value inside of
