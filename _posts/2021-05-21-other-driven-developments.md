@@ -4,6 +4,7 @@ title: "Other Driven Developments"
 date: 2021-05-21
 permalink: "/blog/other-driven-developments"
 external_link: https://shopify.engineering/other-driven-developments
+external_link_title: Shopify Engineering Blog
 excerpt: |
   Mental models within an industry, company, or even a person, change constantly.
   As methodologies mature, we see the long term effects our choices have wrought
@@ -530,9 +531,3 @@ coding easy for ourselves and teammates, maybe the best way to internalize the
 “whyness” is a different name. I suggest:
 
 Human Driven Development.
-
-<div class="text--centered text--small">
-<a rel="noopener noreferrer" target="__blank" class="blue_underline--hover blue_underline--small"
-href="{{ page.external_link }}"><em>Originally published
-on the shopify engineering blog.</em></a>
-</div>

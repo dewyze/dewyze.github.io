@@ -5,9 +5,20 @@ layout: blog
 <article class="blog blog--post">
   <div class="blog__title--underline">
     <h1 class="text--centered">{{ page.title }}</h1>
-    <h3 style="color: #bbbbbb;" class="text--italic text--centered">
+    <h3 style="color: #bbbbbb" class="text--italic text--centered">
       {{ page.date | date: "%Y-%m-%d" }}
     </h3>
+    {% if page.external_link %}
+    <div class="text--centered text--small">
+      <a
+        rel="noopener noreferrer"
+        target="__blank"
+        class="blue_underline--hover blue_underline--small"
+        href="{{ page.external_link }}"
+        ><em>Originally published on the {{ page.external_link_title}}.</em></a
+      >
+    </div>
+    {% endif %}
   </div>
   {{ content }}
   <div class="blog__scroll_to_top">

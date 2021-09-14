@@ -4,6 +4,7 @@ title:  "Holding the Career Ladder Steady as a Tech Lead"
 date:   2020-03-12
 permalink: "/blog/holding-the-career-ladder-steady-as-a-tech-lead"
 external_link: https://medium.com/braintree-product-technology/holding-the-career-ladder-steady-as-a-tech-lead-75e9d53a3f04
+external_link_title: Braintree Engineering Blog
 excerpt: |
   It is easy to view the tech lead role as one that is primarily,
   well…technical. However, as is the case with most jobs, a tech lead's role
@@ -60,9 +61,3 @@ Ensure that in your own meetings with your manager you take time to share the su
 As teammates' skills progress, consider offering opportunities for anchoring/leadership on a team. Not all teammates may openly say they want to take on a project, but that does not signal their capability to do so. This also has the benefit of increasing your teammates' sense of ownership of projects and signifies the importance of their role on the team. These also do not need to be full blown month long work streams, but can be as small as taking complete ownership on design for a card.
 
 Though taken together these tips may seem like extra work, think of this instead as a tech leadership mindset. Being a technical leader means being aware of the technical needs and aspirations of your teammates, creating a space where a team can learn and grow, and giving credit where credit is due.
-
-<div class="text--centered text--small">
-<a rel="noopener noreferrer" target="__blank" class="blue_underline--hover blue_underline--small"
-href="{{ page.external_link }}"><em>Originally published
-on medium.</em></a>
-</div>
