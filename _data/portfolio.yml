@@ -1,5 +1,29 @@
 - title: Open Source
   repos:
+    - name: vim-tada
+      description: Vim plugin for simple project management and todo lists.
+      code: |
+        ```vimscript
+        function! tada#box#Toggle()
+          let group = tada#SyntaxGroupOfLine('.')
+          let text = getline('.')
+          let s:save_col = col('.')
+          let s:blank_box = '[' . tada#todo#DefaultSymbol() . '] '
+          let s:box = '- ' . s:blank_box
+          let s:blank_boxlen = len(s:blank_box)
+        ```
+    - name: dato-dast
+      description: Ruby gem for rendering structured text for the DatoCMS platform.
+      code: |
+        ```ruby
+        def render_children
+          return EMPTY unless children.present?
+
+          children.map do |child|
+            Nodes.wrap(child, @links, @blocks, config).render
+          end.join("\n").gsub(/\n+/, "\n")
+        end
+        ```
     - name: vim-ruby-block-helpers
       description: Vim plugin for more easily maneuvering between ruby blocks as well as displaying current spot nested blocks in rspec files.
       code: |
