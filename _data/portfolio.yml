@@ -12,7 +12,7 @@
           let s:box = '- ' . s:blank_box
           let s:blank_boxlen = len(s:blank_box)
         ```
-    - name: dato-dast
+    - name: dato_dast
       description: Ruby gem for rendering structured text for the DatoCMS platform.
       code: |
         ```ruby
